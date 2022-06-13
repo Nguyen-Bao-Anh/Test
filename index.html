@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./font/fontawesome-free-6.1.1-web/css/all.min.css">
+</head>
+<body>
+    <table  id="table__js" class="table table-bordered ">
+        <thead>
+            <tr>
+                <td>
+                    <input type="checkbox" id="checkbox_all">
+                </td>
+                <th>Text</th>
+                <th>Text</th>
+                <th colspan="4"class="text">Text</th>
+                <th>
+                    <button type="button" id="btn_add" class="btn btn-primary">+</button>
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>
+                    <input type="checkbox" class="checkbox1">
+                </td>
+                <td>
+                    <input type="text" id="input1" class="input1 notext"  placeholder="Nhập số">
+                </td>
+                <td>
+                    <select name="menu" id="id_menu" class="menu1">
+                        <option value="text"></option>
+                        <option value="text">text</option>
+                        <option value="text">text</option>
+                    </select>
+                </td>
+                <td>
+                    <select name="menu" id="id_menu" class="menu2">
+                        <option value="text"></option>
+                        <option value="text">text</option>
+                        <option value="text">text</option>
+                    </select>
+                </td>
+                <td> 
+                    <input type="text" class="input2 notext" placeholder="Nhập số">
+                </td>
+                <td>
+                    <input type="text" class="input3 notext" placeholder="Nhập số">
+                </td>
+                <td >
+                    <input type="text" class="input4 notext" placeholder="Nhập số">
+                </td>
+                <td>
+                    <button type="button" id="btn_remove" class="btn btn-danger ">-</button>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <input type="checkbox" class="checkbox1">
+                </td>
+                <td> 
+                    <input type="text" class="input1 notext" placeholder="Nhập số">
+                </td>
+                <td>
+                    <select name="menu" id="id_menu" class="menu1">
+                        <option value="text"></option>
+                        <option value="text">text</option>
+                        <option value="text">text</option>
+                    </select>
+                </td>
+                <td>
+                    <select name="menu" id="id_menu" class="menu2">
+                        <option value="text"></option>
+                        <option value="text">text</option>
+                        <option value="text">text</option>
+                    </select>
+                </td>
+                <td>
+                    <input type="text" class="input2 notext" placeholder="Nhập số">
+                </td>
+                <td>
+                    <input type="text" class="input3 notext" placeholder="Nhập số">
+                </td>
+                <td >
+                    <input type="text" class="input4 notext" placeholder="Nhập số">
+                </td>
+                <td>
+                    <button type="button" id="btn_remove" class="btn btn-danger ">-</button>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <input type="checkbox" class="checkbox1">
+                </td>
+                <td>
+                    <input type="text" class="input1 notext" placeholder="Nhập số">
+                </td>
+                <td>
+                    <select name="menu" id="id_menu" class="menu1">
+                        <option value="text"></option>
+                        <option value="text">text</option>
+                        <option value="text">text</option>
+                    </select>
+                </td>
+                <td>
+                    <select name="menu" id="id_menu" class="menu2">
+                        <option value="text"></option>
+                        <option value="text">text</option>
+                        <option value="text">text</option>
+                    </select>
+                </td>
+                <td>
+                    <input type="text" class="input2 notext" placeholder="Nhập số">
+                </td>
+                <td>
+                    <input type="text" class="input3 notext" placeholder="Nhập số">
+                </td>
+                <td >
+                    <input type="text" class="input4 notext" placeholder="Nhập số">
+                </td>
+                <td>
+                    <button type="button" id="btn_remove" class="btn btn-danger ">-</button>
+                </td>
+            </tr>
+        </tbody>
+      </table>
+    <!-- js -->
+    <table  id="table__js_temp" style="display:none;">
+        <tbody>
+        <tr>
+            <td>
+                <input type="checkbox" class="checkbox1 check_not">
+            </td>
+            <td>
+                <input type="text" class="input1 notext" placeholder="Nhập số">
+            </td>
+            <td>
+                <select name="menu" id="id_menu" class="menu1">
+                    <option value="text"></option>
+                    <option value="text">text</option>
+                    <option value="text">text</option>
+                </select>
+            </td>
+            <td>
+                <select name="menu" id="id_menu" class="menu2">
+                    <option value="text"></option>
+                    <option value="text">text</option>
+                    <option value="text">text</option>
+                </select>
+            </td>
+            <td>
+                <input type="text" class="input2 notext" placeholder="Nhập số">
+            </td>
+            <td>
+                <input type="text" class="input3 notext" placeholder="Nhập số">
+            </td>
+            <td >
+                <input type="text" class="input4 notext" placeholder="Nhập số">
+            </td>
+            <td>
+                <button type="button" id="btn_remove" class="btn btn-danger ">-</button>
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                <input type="checkbox" class="checkbox1 check_not">
+            </td>
+            <td>
+                <input type="text" class="input1">
+            </td>
+            <td>
+                <select name="menu" id="id_menu" class="menu1">
+                    <option value="text"></option>
+                    <option value="text">text</option>
+                    <option value="text">text</option>
+                </select>
+            </td>
+            <td>
+                <select name="menu" id="id_menu" class="menu2">
+                    <option value="text"></option>
+                    <option value="text">text</option>
+                    <option value="text">text</option>
+                </select>
+            </td>
+            <td>
+                <input type="text" class="input2">
+            </td>
+            <td>
+                <input type="text" class="input3" placeholder="hhhh">
+            </td>
+            <td >
+                <input type="text" class="input4">
+            </td>
+            <td>
+                <button type="button" id="btn_remove" class="btn btn-danger ">-</button>
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                <input type="checkbox" class="checkbox1 check_not">
+            </td>
+            <td>
+                <input type="text" class="input1">
+            </td>
+            <td>
+                <select name="menu" id="id_menu" class="menu1">
+                    <option value="text"></option>
+                    <option value="text">text</option>
+                    <option value="text">text</option>
+                </select>
+            </td>
+            <td>
+                <select name="menu" id="id_menu" class="menu2">
+                    <option value="text"></option>
+                    <option value="text">text</option>
+                    <option value="text">text</option>
+                </select>
+            </td>
+            <td>
+                <input type="text" class="input2">
+            </td>
+            <td>
+                <input type="text" class="input3">
+            </td>
+            <td >
+                <input type="text" class="input4">
+            </td>
+            <td>
+                <button type="button" id="btn_remove" class="btn btn-danger ">-</button>
+            </td>
+        </tr>
+    </tbody>
+      </table>
+    <script type="text/javascript" src="./javascript/bootstrap.min.js"></script>
+    <script type="text/javascript" src="./javascript/login.js"></script>
+</body>
+</html>
