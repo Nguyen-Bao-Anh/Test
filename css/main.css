@@ -1,0 +1,17 @@
+.main {
+    display: flex;
+}
+.login {
+    background: rgba(0, 0, 0, 0.2);
+    display: inline-flex;
+    border: 1px solid #000;
+    flex-direction: column;
+    margin: auto;
+    align-items: center;
+}
+.sb__login {
+    padding: 4px;
+}
+.text {
+    text-align: center;
+}
